@@ -12,7 +12,7 @@ const ApplicationForm = () => {
 
   try {
     await fetch(
-      "https://script.google.com/macros/s/AKfycbznbmxiCWMATYbTxyl4cCOKtC01FU3ID5OZID81SOTPFFYPaNWOTaQw8XuRsnIVRijl/exec",
+      "https://script.google.com/macros/s/AKfycbwkqsy7xTHvtCq8HpQCO0iIkbfz_3QXnnW7nJYs5Vubg_b7nfWE0soyvFlNGqeR04U/exec",
       {
         method: "POST",
         body: formData,
