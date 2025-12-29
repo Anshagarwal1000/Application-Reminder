@@ -5,24 +5,29 @@ const ApplicationForm = () => {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
-    formData.append("access_key", "cef0a5c0-f03f-4787-b357-b33a9988f6b8");
+  event.preventDefault();
+  setResult("Sending...");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
+  const formData = new FormData(event.target);
 
-    const data = await response.json();
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-    } else {
-      setResult("Error");
-    }
-  };
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbznbmxiCWMATYbTxyl4cCOKtC01FU3ID5OZID81SOTPFFYPaNWOTaQw8XuRsnIVRijl/exec",
+      {
+        method: "POST",
+        body: formData,
+        mode: "no-cors", // 🔑 KEY LINE
+      }
+    );
+
+    setResult("Form submitted successfully!");
+    event.target.reset();
+  } catch (error) {
+    setResult("Error submitting form");
+  }
+};
+
+
 
   return (
     <section className="application-form">
