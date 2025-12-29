@@ -171,6 +171,24 @@ footer {
   font-size: 14px;
 }
 
+.application-form input,
+.application-form select,
+.application-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.application-form select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 600px) {
   .hero h1 {

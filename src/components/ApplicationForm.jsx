@@ -38,23 +38,20 @@ const ApplicationForm = () => {
   <input type="text" name="name" placeholder="Full Name" required />
   <input type="email" name="email" placeholder="Email Address" required />
   <input type="tel" name="phone" placeholder="Mobile Number" required />
+  <input type="text" name="city" placeholder="City" required />
 
-  <select name="course" required>
-    <option value="">Select Course</option>
-    <option>B.Tech</option>
-    <option>M.Tech</option>
-    <option>BBA</option>
-    <option>MBA</option>
+  <select name="specialization" required>
+    <option value="">Select Specializations</option>
+    <option>Fashion Design</option>
+    <option>Interior Design</option>
+    <option>Communication/Graphic Design</option>
+    <option>Product Design</option>
+    <option>Animation and VFX</option>
     <option>UI / UX Design</option>
+    <option>Textile Design</option>
   </select>
 
-  <select name="qualification" required>
-    <option value="">Highest Qualification</option>
-    <option>12th Pass</option>
-    <option>12th Appearing</option>
-    <option>Graduate</option>
-    <option>Diploma</option>
-  </select>
+
 
   <textarea name="message" placeholder="Your Message (optional)" />
 
