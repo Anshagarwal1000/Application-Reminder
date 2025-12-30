@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="app">
       <BDesHero />
+      <ApplicationForm />
       <AboutBDes />
       <WhyChooseBDes />
       <CourseStructure />
@@ -24,7 +25,7 @@ function App() {
       <Fees />
       <TopColleges />
       <Careers />
-      <ApplicationForm />
+      
     </div>
   );
 }
